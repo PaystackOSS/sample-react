@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
 
+
+
 .App {
   text-align: center;
   font-family: "Roboto";
@@ -13,7 +15,7 @@
   width: 635px;
   height: 430px;
   background: white;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
 }
 
 .item {

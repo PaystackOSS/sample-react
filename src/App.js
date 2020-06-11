@@ -4,7 +4,7 @@ import "./App.css"
 
 const App = () => {
   const publicKey = "pk_test_f6f2dc3bd34ccb1e1a6f8da42cf27061767c535c"
-  const amount = 500000
+  const amount = 1000000
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
@@ -34,7 +34,7 @@ const App = () => {
           />
           <div className="item-details">
             <p className="item-details__title">Coconut Oil</p>
-            <p className="item-details__amount">NGN{amount / 100}</p>
+            <p className="item-details__amount">NGN {amount / 100}</p>
           </div>
         </div>
         <div className="checkout">
