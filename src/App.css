@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
 
-
-
 .App {
   text-align: center;
   font-family: "Roboto";
@@ -93,6 +91,12 @@
   border-radius: 5px;
   color: #e0eafc;
   height: 35px;
+  padding-left: 10px;
+}
+
+.checkout-field input:focus {
+  background-color: transparent;
+  outline: none;
 }
 
 .paystack-button {
@@ -109,4 +113,12 @@
   width: 100%;
   height: 45px;
   margin-top: 40px;
+}
+
+.paystack-button:hover {
+  background-color: #dadada;
+}
+
+.paystack-button:focus {
+  outline: none;
 }

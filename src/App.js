@@ -18,8 +18,13 @@ const App = () => {
     },
     publicKey,
     text: "Buy Now",
-    onSuccess: () => window.location.reload(),
-    onClose: () => alert("Wait! Don't leave :("),
+    onSuccess: () => {
+      
+      setEmail("")
+      setName("")
+      setPhone("")
+    },
+    onClose: () => alert("Wait! You need this oil, don't go!!!!"),
   }
 
   return (
@@ -44,6 +49,7 @@ const App = () => {
               <input
                 type="text"
                 id="name"
+                value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
@@ -52,6 +58,7 @@ const App = () => {
               <input
                 type="text"
                 id="email"
+                value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
@@ -60,6 +67,7 @@ const App = () => {
               <input
                 type="text"
                 id="phone"
+                value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
             </div>
