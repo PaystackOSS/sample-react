@@ -1,38 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+
 .App {
   text-align: center;
+  font-family: "Roboto";
+  letter-spacing: 0.1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 5% auto;
+  width: 635px;
+  height: 430px;
+  background: white;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item {
+  width: 50%;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item-image {
+  height: 430px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+  background-color: #303030;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.item-details {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  color: #84a17d;
+  text-align: left;
+}
+
+.item-details__title {
+  font-size: 22px;
+}
+
+.item-details__amount {
+  font-weight: bolder;
+}
+
+.checkout {
+  background: #84a17d; /* fallback for old browsers */
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 430px;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.checkout-form {
+  padding: 20px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkout-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.checkout-field label {
+  text-align: left;
+  color: #e0eafc;
+  font-size: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.checkout-field input {
+  background-color: transparent;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  color: #e0eafc;
+  height: 35px;
+}
+
+.paystack-button {
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background-color: #bfbfbf;
+  font-weight: bold;
+  color: #e0eafc;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  margin-top: 40px;
 }

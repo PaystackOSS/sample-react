@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-paystack": "^3.0.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
