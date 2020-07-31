@@ -3,7 +3,7 @@ import { PaystackButton } from "react-paystack"
 import "./App.css"
 
 const App = () => {
-  const publicKey = "pk_test_f6f2dc3bd34ccb1e1a6f8da42cf27061767c535c"
+  const publicKey = "pk_your_public_key_here"
   const amount = 1000000
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
@@ -19,7 +19,6 @@ const App = () => {
     publicKey,
     text: "Buy Now",
     onSuccess: () => {
-      
       setEmail("")
       setName("")
       setPhone("")
