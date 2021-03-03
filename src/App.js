@@ -3,7 +3,7 @@ import { PaystackButton } from "react-paystack"
 import "./App.css"
 
 const App = () => {
-  const publicKey = "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+  const privateKey = "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015adba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
   const amount = 1000000
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
@@ -74,6 +74,9 @@ const App = () => {
           </div>
         </div>
       </div>
+  <script>this.html.push( '<a class="quiz-au" data-src="' + this.au + '"><span class="quiz-au-icon"></span>Click to play</a>' ); </script>
+
+
     </div>
   )
 }
