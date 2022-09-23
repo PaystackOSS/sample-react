@@ -25,6 +25,7 @@ git clone https://github.com/PaystackOSS/sample-react.git
 
 2. Navigate to the root directory and install dependencies
 ```
+cd sample-react
 yarn install
 ```
 
