@@ -19,20 +19,28 @@ View a live demo of the app [here](https://react-paystack-guide.netlify.app/)
 ## Get Started
 
 1. Clone this repo:
-```git clone https://github.com/PaystackOSS/sample-react.git```
+```
+git clone https://github.com/PaystackOSS/sample-react.git
+```
 
 2. Navigate to the root directory and install dependencies
-```yarn install```
+```
+yarn install
+```
 
 ## Usage
 
 1. Rename the `.env.example` file to `.env` and add your Paystack public key:
 
-```REACT_APP_PAYSTACK_PUBLIC_KEY=pk_domain_xxxxxx```
+```
+REACT_APP_PAYSTACK_PUBLIC_KEY=pk_domain_xxxxxx
+```
 
 2. Start the application
 
-```yarn start```
+```
+yarn start
+```
 
 3. Visit http://localhost:3000 in your browser, if React doesn't automatically open it for you. You should now see your checkout form, and be able to make a purchase.
 
@@ -44,5 +52,5 @@ If you notice any issues with this app, please [open an issue](https://github.co
 
 ## License
 
-This repository is made available under the MIT license. Read [LICENSE.md](https://google.com) for more information.
+This repository is made available under the MIT license. Read [LICENSE.md](https://github.com/PaystackOSS/sample-react/blob/master/LICENSE.md) for more information.
 
