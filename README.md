@@ -1,6 +1,6 @@
 # Getting Started with Paystack and React
 
-This repository includes an sample application that shows how to integrate Paystack payments to your React apps.
+This repository includes a sample application that shows how to integrate Paystack payments to your React apps.
 
 The sample app is a simple checkout form to purchase an item and check out using the [Paystack Popup](https://paystack.com/docs/payments/accept-payments/#popup) checkout. It uses [iamraphson's](https://github.com/iamraphson) [react-paystack](https://github.com/iamraphson/react-paystack) library.
 
