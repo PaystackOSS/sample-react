@@ -1,13 +1,19 @@
-import React, { useState } from "react"
-import { PaystackButton } from "react-paystack"
-import "./App.css"
+import React, { useState } from 'react';
+import { PaystackButton } from 'react-paystack';
+import './App.css';
 
 const App = () => {
-  const publicKey = process.env.REACT_APP_PAYSTACK_PUBLIC_KEY
-  const amount = 1000000
-  const [email, setEmail] = useState("")
-  const [name, setName] = useState("")
-  const [phone, setPhone] = useState("")
+  const publicKey = process.env.REACT_APP_PAYSTACK_PUBLIC_KEY;
+  const amount = 1000000;
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const resetForm = () => {
+    setEmail('');
+    setName('');
+    setPhone('');
+  };
 
   const componentProps = {
     email,
@@ -17,14 +23,15 @@ const App = () => {
       phone,
     },
     publicKey,
-    text: "Buy Now",
-    onSuccess: () => {
-      setEmail("")
-      setName("")
-      setPhone("")
+    text: 'Buy Now',
+    onSuccess: ({ reference }) => {
+      alert(
+        `Your purchase was successful! Transaction reference: ${reference}`
+      );
+      resetForm();
     },
     onClose: () => alert("Wait! You need this oil, don't go!!!!"),
-  }
+  };
 
   return (
     <div className="App">
@@ -75,7 +82,7 @@ const App = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
